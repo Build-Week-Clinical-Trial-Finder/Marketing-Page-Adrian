@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Merriweather';
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans';
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  font-family: 'Open Sans';
+  font-size: 1.25rem;
+}
+.nav-wrapper {
+  background-image: url('./images/pills.jpg');
+}
+nav {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+}
+.left-header {
+  width: 20%;
+  margin-right: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left-header a {
+  padding: 2%;
+}
+.center-logo {
+  width: 40%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.center-logo img {
+  padding: 2%;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  margin-left: 4%;
+}
+.right-header a {
+  padding: 2%;
+}
+head {
+  background-image: url('../images/pills.jpg');
+}
+.banner-wrapper {
+  text-align: center;
+  background-color: lightskyblue;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+banner {
+  font-family: "Merriweather";
+  font-size: 1.25rem;
+}
+.upper-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  width: 100%;
+  border-bottom: 1px solid #C0C0C0;
+}
+.upper-section .upper-section-container {
+  width: 60%;
+  margin-bottom: 20%;
+  text-align: center;
+}
+.upper-section .upper-section-container h1 {
+  font-size: 3rem;
+}
+.upper-section .upper-section-container h2 {
+  margin-top: 4%;
+  font-size: 1.5rem;
+}
+.upper-section .upper-section-container a {
+  text-decoration: underline;
+  padding: 2%;
+  margin-top: 4%;
+}
+.upper-section .upper-section-container .button-wrapper {
+  margin-top: 8%;
+}
+.upper-section .upper-section-container .button-wrapper button {
+  text-align: center;
+  width: 10%;
+  margin-bottom: 2%;
+}
+.middle-section {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+.middle-section .middle-section-header {
+  text-align: center;
+}
+.middle-section .middle-section-header h3 {
+  font-size: 3rem;
+}
+.middle-section .middle-section-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10%;
+  border-bottom: 1px solid #C0C0C0;
+}
+.middle-section .middle-section-container .step-box {
+  width: 16%;
+  height: 160px;
+  margin-bottom: 16%;
+}
+.middle-section .middle-section-container .step-box p {
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  text-align: center;
+}
+.middle-section .middle-section-container .step-box img {
+  padding: 2% 10% 5% 10%;
+  margin-bottom: 4%;
+  width: 200px;
+  height: 150px;
+}
