@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Merriweather';
+  font-family: 'Montserrat';
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
 }
 h1 {
   font-size: 4rem;
@@ -173,6 +173,7 @@ a {
 nav {
   width: 100%;
   margin-top: 2%;
+  background-color: white;
   display: flex;
   align-items: space-between;
   justify-content: center;
@@ -186,6 +187,7 @@ nav {
 }
 .left-header a {
   padding: 2%;
+  font-family: "Montserrat";
 }
 .center-logo {
   width: 40%;
@@ -204,21 +206,42 @@ nav {
 }
 .right-header a {
   padding: 2%;
+  font-family: "Montserrat";
 }
-head {
-  background-image: url('../images/pills.jpg');
+footer {
+  display: block;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  line-height: 2;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .copyright {
+  font-size: 0.5rem;
+}
+.top-background {
+  background-image: url('../images/capsules.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .banner-wrapper {
   text-align: center;
-  background-color: lightskyblue;
-  height: 50px;
+  background-color: #2d9aff;
+  color: white;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 banner {
-  font-family: "Merriweather";
-  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
 }
 .upper-section {
   display: flex;
@@ -226,7 +249,6 @@ banner {
   justify-content: center;
   margin-top: 4%;
   width: 100%;
-  border-bottom: 1px solid #C0C0C0;
 }
 .upper-section .upper-section-container {
   width: 60%;
@@ -234,11 +256,20 @@ banner {
   text-align: center;
 }
 .upper-section .upper-section-container h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
 }
 .upper-section .upper-section-container h2 {
   margin-top: 4%;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-family: "Nanum Myeongjo";
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
 }
 .upper-section .upper-section-container a {
   text-decoration: underline;
@@ -246,12 +277,22 @@ banner {
   margin-top: 4%;
 }
 .upper-section .upper-section-container .button-wrapper {
-  margin-top: 8%;
+  margin-top: 4%;
 }
 .upper-section .upper-section-container .button-wrapper button {
   text-align: center;
-  width: 10%;
+  width: 20%;
   margin-bottom: 2%;
+  background: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: inherit;
 }
 .middle-section {
   display: inline-block;
@@ -261,6 +302,7 @@ banner {
 }
 .middle-section .middle-section-header {
   text-align: center;
+  margin-bottom: 0;
 }
 .middle-section .middle-section-header h3 {
   font-size: 3rem;
@@ -269,22 +311,87 @@ banner {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 10%;
-  border-bottom: 1px solid #C0C0C0;
+  margin-top: 5%;
 }
 .middle-section .middle-section-container .step-box {
   width: 16%;
   height: 160px;
-  margin-bottom: 16%;
+  margin-bottom: 25%;
 }
 .middle-section .middle-section-container .step-box p {
   font-size: 1.5rem;
-  font-family: "Open Sans";
+  font-family: "Nanum Myeongjo";
   text-align: center;
 }
 .middle-section .middle-section-container .step-box img {
   padding: 2% 10% 5% 10%;
   margin-bottom: 4%;
-  width: 200px;
-  height: 150px;
+  width: 200%;
+  height: 200%;
+}
+.makes-us-different-wrapper {
+  margin-left: 4%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.makes-us-different-wrapper .makes-us-different {
+  padding-right: 4%;
+  width: 46%;
+}
+.makes-us-different-wrapper .makes-us-different button {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 2%;
+  background: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: inherit;
+}
+.makes-us-different-wrapper .makes-us-different p {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  font-family: "Nanum Myeongjo";
+}
+.makes-us-different-wrapper .makes-us-different-image-right {
+  width: 46%;
+}
+.connected-wrapper {
+  margin-left: 4%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+.connected-wrapper .connected-image-left {
+  width: 46%;
+}
+.connected-wrapper .connected-steps-list {
+  width: 46%;
+  height: auto;
+  padding-left: 4%;
+  padding-bottom: 6%;
+  font-family: "Nanum Myeongjo";
+}
+.connected-wrapper .connected-steps-list ul {
+  font-size: 1.5rem;
+  padding-top: 4%;
+}
+.connected-wrapper .connected-steps-list ul li {
+  line-height: 2;
 }
