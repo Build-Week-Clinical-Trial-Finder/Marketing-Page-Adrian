@@ -167,8 +167,37 @@ a {
   font-family: 'Open Sans';
   font-size: 1.25rem;
 }
+button {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 2%;
+  background: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  cursor: pointer;
+  outline: inherit;
+}
+ul {
+  font-size: 1.5rem;
+  padding-top: 4%;
+}
+li {
+  line-height: 2;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
 .nav-wrapper {
   background-image: url('./images/pills.jpg');
+}
+.about-nav {
+  background: none;
 }
 nav {
   width: 100%;
@@ -279,21 +308,6 @@ banner {
 .upper-section .upper-section-container .button-wrapper {
   margin-top: 4%;
 }
-.upper-section .upper-section-container .button-wrapper button {
-  text-align: center;
-  width: 20%;
-  margin-bottom: 2%;
-  background: none;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 2%;
-  font: inherit;
-  font-size: 1.5rem;
-  cursor: pointer;
-  outline: inherit;
-}
 .middle-section {
   display: inline-block;
   width: 100%;
@@ -302,7 +316,7 @@ banner {
 }
 .middle-section .middle-section-header {
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 0%;
 }
 .middle-section .middle-section-header h3 {
   font-size: 3rem;
@@ -330,9 +344,7 @@ banner {
   height: 200%;
 }
 .makes-us-different-wrapper {
-  margin-left: 4%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% 5% 4% 0%;
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
@@ -345,33 +357,16 @@ banner {
   padding-right: 4%;
   width: 46%;
 }
-.makes-us-different-wrapper .makes-us-different button {
-  text-align: center;
-  width: 40%;
-  margin-bottom: 2%;
-  background: none;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  padding: 2%;
-  font: inherit;
-  font-size: 1.5rem;
-  cursor: pointer;
-  outline: inherit;
-}
 .makes-us-different-wrapper .makes-us-different p {
-  margin-bottom: 2%;
   margin-top: 2%;
+  margin-bottom: 2%;
   font-family: "Nanum Myeongjo";
 }
 .makes-us-different-wrapper .makes-us-different-image-right {
   width: 46%;
 }
 .connected-wrapper {
-  margin-left: 4%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% 5% 4% 0%;
   padding-bottom: 5%;
   display: flex;
   justify-content: center;
@@ -388,10 +383,155 @@ banner {
   padding-bottom: 6%;
   font-family: "Nanum Myeongjo";
 }
-.connected-wrapper .connected-steps-list ul {
-  font-size: 1.5rem;
-  padding-top: 4%;
+.connected-wrapper .connected-steps-list ul button {
+  margin-top: 4%;
 }
-.connected-wrapper .connected-steps-list ul li {
-  line-height: 2;
+/* ---- Middle section image rotate right on hover ---- */
+.step-box img {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.step-box:hover img {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+}
+button::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #6098FF;
+  display: block;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+}
+button:hover::before {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.btn-1 {
+  top: 40px;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase!important;
+  letter-spacing: 2px;
+  color: white;
+  background-color: black;
+  cursor: hand;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden!important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+.btn-1:hover {
+  border: 1px solid #071982;
+  color: #7de0db !important;
+}
+.btn-1::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #071982;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+.btn-1::after {
+  content: '';
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #7de0db;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+.btn-1:hover::before,
+.btn1O:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.btn-1:hover::after,
+.btn1O:hover::after {
+  opacity: 1;
+  width: 120%;
+}
+.about-nav {
+  background: none;
+}
+.about-section {
+  display: block;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 8%;
+  margin-top: 8%;
+}
+.about-section .team-member {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  align-items: space-between;
+}
+.about-section .team-member img {
+  width: auto;
+  border-radius: 200px;
+  margin-top: 4%;
+}
+.about-section .team-member p {
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2%;
+  margin-top: 4%;
+  margin-left: 4%;
+  border-radius: 10px;
+}
+.about-section .team-member p span {
+  font-weight: 700;
+  font-size: 2rem;
 }
