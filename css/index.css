@@ -237,6 +237,94 @@ nav {
   padding: 2%;
   font-family: "Montserrat";
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    margin-top: 2%;
+    background-color: white;
+    display: block;
+    align-items: space-between;
+    justify-content: center;
+  }
+  .left-header {
+    width: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+  .left-header a {
+    display: block;
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: "Montserrat";
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  .center-logo {
+    width: 100%;
+    display: block;
+  }
+  .right-header {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .right-header a {
+    display: block;
+    padding: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: "Montserrat";
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 501px) {
+  nav {
+    width: 100%;
+    margin-top: 2%;
+    background-color: white;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+  }
+  .left-header {
+    width: 20%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .left-header a {
+    padding: 2%;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+  }
+  .center-logo {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .center-logo img {
+    padding: 2%;
+  }
+  .right-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: 4%;
+  }
+  .right-header a {
+    padding: 2%;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+  }
+}
 footer {
   display: block;
   align-items: center;
@@ -278,6 +366,7 @@ banner {
   justify-content: center;
   margin-top: 4%;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .upper-section .upper-section-container {
   width: 60%;
@@ -399,7 +488,6 @@ banner {
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
   -ms-transform: rotate(10deg);
-  -o-transform: rotate(10deg);
 }
 button::before {
   content: '';
@@ -502,8 +590,241 @@ button:hover::before {
   opacity: 1;
   width: 120%;
 }
-.about-nav {
-  background: none;
+@media (max-width: 500px) {
+  .upper-section {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .upper-section .upper-section-container {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    padding-bottom: 10%;
+  }
+  .upper-section .upper-section-container h1 {
+    font-size: 3rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+  }
+  .upper-section .upper-section-container h2 {
+    margin: 0;
+    padding: 2%;
+    font-size: 1.5rem;
+    font-family: "Nanum Myeongjo";
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+  .upper-section .upper-section-container a {
+    text-decoration: underline;
+    padding: 2%;
+    margin: 0;
+  }
+  .upper-section .upper-section-container .button-wrapper {
+    margin-top: 4%;
+  }
+  .middle-section {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .middle-section .middle-section-header {
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  .middle-section .middle-section-header h3 {
+    font-size: 3rem;
+  }
+  .middle-section .middle-section-container {
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+    height: 1000px;
+  }
+  .middle-section .middle-section-container .step-box {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  .middle-section .middle-section-container .step-box p {
+    font-size: 1.8rem;
+    font-family: "Nanum Myeongjo";
+    text-align: center;
+    margin: 5%;
+  }
+  .middle-section .middle-section-container .step-box img {
+    padding: 2% 10% 5% 10%;
+    margin: 5%;
+    width: 300px;
+    height: 150px;
+  }
+  .makes-us-different-wrapper {
+    margin: 0;
+    display: block;
+    text-align: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .makes-us-different-wrapper .makes-us-different {
+    width: 100%;
+    margin: 5%;
+    margin-bottom: 10%;
+  }
+  .makes-us-different-wrapper .makes-us-different p {
+    margin: 10%;
+    margin-bottom: 2.5%;
+    font-family: "Nanum Myeongjo";
+  }
+  .makes-us-different-wrapper .makes-us-different-image-right {
+    display: none;
+  }
+  .connected-wrapper {
+    margin: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    width: 100%;
+  }
+  .connected-wrapper .connected-image-left {
+    display: none;
+  }
+  .connected-wrapper .connected-steps-list {
+    width: 100%;
+    height: auto;
+    font-family: "Nanum Myeongjo";
+  }
+  .connected-wrapper .connected-steps-list ul button {
+    margin-top: 4%;
+  }
+}
+@media (min-width: 501px) {
+  .upper-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .upper-section .upper-section-container {
+    width: 60%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+  .upper-section .upper-section-container h1 {
+    font-size: 3rem;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+  }
+  .upper-section .upper-section-container h2 {
+    margin-top: 4%;
+    font-size: 1.75rem;
+    font-family: "Nanum Myeongjo";
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+  .upper-section .upper-section-container a {
+    text-decoration: underline;
+    padding: 2%;
+    margin-top: 4%;
+  }
+  .upper-section .upper-section-container .button-wrapper {
+    margin-top: 4%;
+  }
+  .middle-section {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .middle-section .middle-section-header {
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  .middle-section .middle-section-header h3 {
+    font-size: 2.5rem;
+  }
+  .middle-section .middle-section-container {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .middle-section .middle-section-container .step-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .middle-section .middle-section-container .step-box p {
+    font-size: 1.8rem;
+    font-family: "Nanum Myeongjo";
+    text-align: center;
+    margin-right: 2%;
+  }
+  .middle-section .middle-section-container .step-box img {
+    padding: 1%;
+    margin: 1%;
+    width: 300px;
+    height: 150px;
+  }
+  .makes-us-different-wrapper {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .makes-us-different-wrapper .makes-us-different {
+    padding-right: 4%;
+    width: 46%;
+  }
+  .makes-us-different-wrapper .makes-us-different p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: "Nanum Myeongjo";
+  }
+  .makes-us-different-wrapper .makes-us-different button {
+    width: 60%;
+  }
+  .makes-us-different-wrapper .makes-us-different-image-right {
+    width: 46%;
+  }
+  .connected-wrapper {
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+  .connected-wrapper .connected-image-left {
+    width: 46%;
+  }
+  .connected-wrapper .connected-steps-list {
+    width: 46%;
+    height: auto;
+    padding-left: 4%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: "Nanum Myeongjo";
+  }
+  .connected-wrapper .connected-steps-list ul button {
+    margin-top: 0%;
+    width: 60%;
+  }
 }
 .about-section {
   display: block;
@@ -534,4 +855,72 @@ button:hover::before {
 .about-section .team-member p span {
   font-weight: 700;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .about-section {
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+  }
+  .about-section .team-member {
+    display: flex;
+    width: 90%;
+    justify-content: left;
+    align-items: space-between;
+  }
+  .about-section .team-member img {
+    width: 20%;
+    height: 20%;
+    border-radius: 200px;
+    margin-top: 4%;
+  }
+  .about-section .team-member p {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2%;
+    margin-top: 4%;
+    margin-left: 4%;
+    border-radius: 10px;
+    font-size: 1.25rem;
+  }
+  .about-section .team-member p span {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 501px) {
+  .about-section {
+    display: block;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+  }
+  .about-section .team-member {
+    display: flex;
+    width: 90%;
+    justify-content: left;
+    align-items: space-between;
+  }
+  .about-section .team-member img {
+    width: 20%;
+    height: 20%;
+    border-radius: 200px;
+    margin-top: 4%;
+  }
+  .about-section .team-member p {
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2%;
+    margin-top: 4%;
+    margin-left: 4%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+  }
+  .about-section .team-member p span {
+    font-weight: 700;
+    font-size: 2rem;
+  }
 }
